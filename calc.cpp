@@ -1,8 +1,4 @@
 /* 
-    Functions Lab
-    Updated By: Tanner D.
-    CSCI 111
-    Date:9/13/18
     Program prompts user to enter two points in the form (x1, y1) and (x2, y2) and finds the
         distance between the twi points using a function.
     Algorithm steps:
@@ -17,16 +13,6 @@
     6. Test and validate that program output is correct for a given set of input points
     7. BONUS - (10 points) Using a loop repeat step 2-6 until the user wants to quit.
 */
-
-// git init
-// git add .
-// git commit -m "COMMIT MESSAGE"
-// git remote add origin https://github.com/td0g51/Distance-Between-Points.git
-// git push -u origin master
-
-
-// git config --global user.email "bob@example.com"
-// git config --global user.name "Bob"
 
 #include <iostream>
 #include <cstdio>
