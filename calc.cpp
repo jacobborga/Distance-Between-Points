@@ -18,8 +18,10 @@
 #include <cstdio>
 #include <cassert>
 #include <cmath>
+#include <iomanip>
 using namespace std;
 
+float i = 2.236070;
 const float epsilon = 1e-6;
 /* 0.000001 accuracy up to 6 decimal points
         Function prototypes
@@ -52,7 +54,7 @@ int main() {
 
         printf("(x2, y2) = (%d, %d)\n", x2, y2);
         test();
-        cout << "The Distance between (x1, y1) and (x2, y2) is: " << findDistance(x1, y1, x2, y2) << endl;
+        cout << "The Distance between (x1, y1) and (x2, y2) is: " << setprecision(6) << fixed << findDistance(x1, y1, x2, y2) << endl;
         /* FIXME - call findDistance function passing proper arguments
         FIXME - Using printf function display the returned distance with proper description */
 
@@ -71,7 +73,6 @@ double findDistance(int x1, int y1, int x2, int y2) {
 }
 
 void test() {
-    float i = 2.23607;
     assert(findDistance(4, 3, 5, 1) - i <= epsilon);
     assert(findDistance(5, 2, 6, 3) - i <= epsilon);
     assert(findDistance(6, 1, 7, 2) - i <= epsilon);
