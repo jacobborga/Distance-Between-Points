@@ -18,7 +18,6 @@
 #include <cstdio>
 #include <cassert>
 #include <cmath>
-#include <iomanip>
 using namespace std;
 
 float i = 2.236070;
@@ -58,7 +57,7 @@ int main()
         // Testing a set of problems.
         test();
 
-        cout << "\nThe Distance between (x1, y1) and (x2, y2) is: " << setprecision(6) << fixed << findDistance(x1, y1, x2, y2) << endl;
+        cout << "\nThe Distance between (x1, y1) and (x2, y2) is: " << findDistance(x1, y1, x2, y2) << endl;
         /* FIXME - call findDistance function passing proper arguments
         FIXME - Using printf function display the returned distance with proper description */
 
@@ -69,6 +68,8 @@ int main()
     } while (1);
     return 0;
 }
+
+// https://devdocs.io
 
 double findDistance(int x1, int y1, int x2, int y2)
 {
