@@ -1,4 +1,4 @@
-# Distance-Between-Points
+# Distance Between Two Points
 
 Authored by: Td0g51
 
